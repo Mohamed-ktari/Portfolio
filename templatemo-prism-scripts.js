@@ -450,20 +450,20 @@ https://templatemo.com/tm-600-prism-flux
         }
 
         // Form submission
-        const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
+        // const contactForm = document.getElementById('contactForm');
+        // contactForm.addEventListener('submit', (e) => {
+        //     e.preventDefault();
             
-            // Get form data
-            const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
+        //     // Get form data
+        //     const formData = new FormData(contactForm);
+        //     const data = Object.fromEntries(formData);
             
-            // Show success message
-            alert(`Thank you ${data.name}! Your message has been transmitted successfully. We'll respond within 24 hours.`);
+        //     // Show success message
+        //     alert(`Thank you ${data.name}! Your message has been transmitted successfully. We'll respond within 24 hours.`);
             
-            // Reset form
-            contactForm.reset();
-        });
+        //     // Reset form
+        //     contactForm.reset();
+        // });
 
         // Loading screen
         window.addEventListener('load', () => {
