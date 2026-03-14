@@ -1621,3 +1621,34 @@ a.info-item {
 		text-align: center;
 	}
 }
+
+
+/* Skill colors */
+.c { color: #555; }
+.cpp { color: #00599C; }
+.java { color: #f89820; }
+.csharp { color: #68217A; }
+.python { color: #3776AB; }
+.javascript { color: #F7DF1E; }
+.typescript { color: #3178C6; }
+
+.angular { color: #DD0031; }
+.nextjs { color: #000000; }
+
+.nodejs { color: #339933; }
+.spring { color: #6DB33F; }
+.dotnet { color: #512BD4; }
+.php { color: #777BB4; }
+
+.postgres { color: #336791; }
+.mysql { color: #4479A1; }
+.sqlserver { color: #CC2927; }
+.mongodb { color: #47A248; }
+
+.qdrant { color: #ff4d4d; }
+.chroma { color: #ff7f50; }
+.weaviate { color: #00aaff; }
+
+.docker { color: #2496ED; }
+.aws { color: #FF9900; }
+.azure { color: #0078D4; }

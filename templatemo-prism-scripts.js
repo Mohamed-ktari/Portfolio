@@ -65,18 +65,38 @@ https://templatemo.com/tm-600-prism-flux
 
         // Skills data
         const skillsData = [
-            { name: 'React.js', icon: '⚛️', level: 95, category: 'frontend' },
-            { name: 'Node.js', icon: '🟢', level: 90, category: 'backend' },
-            { name: 'TypeScript', icon: '📘', level: 88, category: 'frontend' },
-            { name: 'AWS', icon: '☁️', level: 92, category: 'cloud' },
-            { name: 'Docker', icon: '🐳', level: 85, category: 'cloud' },
-            { name: 'Python', icon: '🐍', level: 93, category: 'backend' },
-            { name: 'Kubernetes', icon: '☸️', level: 82, category: 'cloud' },
-            { name: 'GraphQL', icon: '◈', level: 87, category: 'backend' },
-            { name: 'TensorFlow', icon: '🤖', level: 78, category: 'emerging' },
-            { name: 'Blockchain', icon: '🔗', level: 75, category: 'emerging' },
-            { name: 'Vue.js', icon: '💚', level: 85, category: 'frontend' },
-            { name: 'MongoDB', icon: '🍃', level: 90, category: 'backend' }
+
+{ name: 'C', icon: "<i class='fa-solid fa-code c'></i>", category: 'languages' },
+{ name: 'C++', icon: "<i class='fa-solid fa-code cpp'></i>", category: 'languages' },
+{ name: 'Java', icon: "<i class='fa-brands fa-java java'></i>", category: 'languages' },
+{ name: 'C#', icon: "<i class='fa-solid fa-code csharp'></i>", category: 'languages' },
+{ name: 'Python', icon: "<i class='fa-brands fa-python python'></i>", category: 'languages' },
+{ name: 'JavaScript', icon: "<i class='fa-brands fa-js javascript'></i>", category: 'languages' },
+{ name: 'TypeScript', icon: "<i class='fa-solid fa-code typescript'></i>", category: 'languages' },
+
+{ name: 'Angular', icon: "<i class='fa-brands fa-angular angular'></i>", category: 'frontend' },
+{ name: 'Next.js', icon: "<i class='fa-solid fa-code nextjs'></i>", category: 'frontend' },
+
+{ name: 'Node.js', icon: "<i class='fa-brands fa-node-js nodejs'></i>", category: 'backend' },
+{ name: 'Spring Boot', icon: "<i class='fa-solid fa-leaf spring'></i>", category: 'backend' },
+{ name: '.NET', icon: "<i class='fa-brands fa-microsoft dotnet'></i>", category: 'backend' },
+{ name: 'PHP', icon: "<i class='fa-brands fa-php php'></i>", category: 'backend' },
+
+{ name: 'PostgreSQL', icon: "<i class='fa-solid fa-database postgres'></i>", category: 'database' },
+{ name: 'MySQL', icon: "<i class='fa-solid fa-database mysql'></i>", category: 'database' },
+{ name: 'SQL Server', icon: "<i class='fa-solid fa-database sqlserver'></i>", category: 'database' },
+{ name: 'MongoDB', icon: "<i class='fa-solid fa-database mongodb'></i>", category: 'database' },
+
+{ name: 'Qdrant', icon: "<i class='fa-solid fa-brain qdrant'></i>", category: 'database' },
+{ name: 'Chroma', icon: "<i class='fa-solid fa-brain chroma'></i>", category: 'database' },
+{ name: 'Weaviate', icon: "<i class='fa-solid fa-brain weaviate'></i>", category: 'database' },
+
+{ name: 'Docker', icon: "<i class='fa-brands fa-docker docker'></i>", category: 'devops' },
+{ name: 'AWS', icon: "<i class='fa-brands fa-aws aws'></i>", category: 'devops' },
+{ name: 'Azure', icon: "<i class='fa-brands fa-microsoft azure'></i>", category: 'devops' }
+
+
+
         ];
 
         // Scroll to section function
@@ -287,12 +307,12 @@ https://templatemo.com/tm-600-prism-flux
                         <div class="hexagon-inner">
                             <div class="hexagon-content">
                                 <div class="skill-icon-hex">${skill.icon}</div>
-                                <div class="skill-name-hex">${skill.name}</div>
-                                <div class="skill-level">
-                                    <div class="skill-level-fill" style="width: ${skill.level}%"></div>
-                                </div>
-                                <div class="skill-percentage-hex">${skill.level}%</div>
-                            </div>
+                                <div class="skill-name-hex">${skill.name}</div>`+
+                                // <div class="skill-level">
+                                //     <div class="skill-level-fill" style="width: ${skill.level}%"></div>
+                                // </div>
+                                // <div class="skill-percentage-hex">${skill.level}%</div>
+                            `</div>
                         </div>
                     `;
                     
