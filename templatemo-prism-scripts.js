@@ -13,54 +13,54 @@ https://templatemo.com/tm-600-prism-flux
 
         const portfolioData = [
             {
-                id: 1,
-                title: 'Neural Network',
-                description: 'Advanced AI system with deep learning capabilities for predictive analytics and pattern recognition.',
-                image: 'images/neural-network.jpg',
-                tech: ['TensorFlow', 'Python', 'CUDA']
-            },
-            {
-                id: 2,
-                title: 'Quantum Cloud',
-                description: 'Next-generation cloud infrastructure leveraging quantum computing for unprecedented processing power.',
-                image: 'images/quantum-cloud.jpg',
-                tech: ['AWS', 'Kubernetes', 'Docker']
-            },
-            {
-                id: 3,
-                title: 'Blockchain Vault',
-                description: 'Secure decentralized storage solution using advanced encryption and distributed ledger technology.',
-                image: 'images/blockchain-vault.jpg',
-                tech: ['Ethereum', 'Solidity', 'Web3']
-            },
-            {
-                id: 4,
-                title: 'Cyber Defense',
-                description: 'Military-grade cybersecurity framework with real-time threat detection and automated response.',
-                image: 'images/cyber-defense.jpg',
-                tech: ['Zero Trust', 'AI Defense', 'Encryption']
-            },
-            {
-                id: 5,
-                title: 'Data Nexus',
-                description: 'Big data processing platform capable of analyzing petabytes of information in real-time.',
-                image: 'images/data-nexus.jpg',
-                tech: ['Apache Spark', 'Hadoop', 'Kafka']
-            },
-            {
-                id: 6,
-                title: 'AR Interface',
-                description: 'Augmented reality system for immersive data visualization and interactive experiences.',
-                image: 'images/ar-interface.jpg',
-                tech: ['Unity', 'ARCore', 'Computer Vision']
-            },
-            {
-                id: 7,
-                title: 'IoT Matrix',
-                description: 'Intelligent IoT ecosystem connecting millions of devices with edge computing capabilities.',
-                image: 'images/iot-matrix.jpg',
-                tech: ['MQTT', 'Edge AI', '5G']
-            }
+    id: 1,
+    title: 'RAG-based Chatbot',
+    description: 'Developed an intelligent chatbot using RAG to answer post-baccalaureate student questions using Ministry of Higher Education data.',
+    image: 'images/neural-network.jpg',
+    tech: ['LLaMA', 'Python', 'Vector Databases']
+},
+{
+    id: 2,
+    title: 'ANN Benchmark',
+    description: 'Implemented and benchmarked multiple ANN search methods and vector quantization techniques for efficient similarity search.',
+    image: 'images/quantum-cloud.jpg',
+    tech: ['C++', 'Python', 'Docker']
+},
+{
+    id: 3,
+    title: 'Prime Platform',
+    description: 'Built a web platform to manage universities and research publications with automated bonus calculation and administrative document generation.',
+    image: 'images/blockchain-vault.jpg',
+    tech: ['SpringBoot', 'Next.js', 'PostgreSQL']
+},
+{
+    id: 4,
+    title: 'Enterprise Resource Planning System',
+    description: 'Developed an ERP system for managing HR, projects, invoicing, and customer relationships.',
+    image: 'images/cyber-defense.jpg',
+    tech: ['.NET', 'Angular', 'SQL Server']
+},
+{
+    id: 5,
+    title: '4C ENSIT Web Application',
+    description: 'Developed a web platform to manage activities and services for the 4C ENSIT center.',
+    image: 'images/data-nexus.jpg',
+    tech: ['.NET', 'JavaScript', 'SQL Server']
+},
+{
+    id: 6,
+    title: 'Pharmacy Management System',
+    description: 'Built a desktop application for managing medications, inventory, and customer sales.',
+    image: 'images/ar-interface.jpg',
+    tech: ['JavaFX', 'Java', 'MySQL']
+},
+{
+    id: 7,
+    title: 'E-commerce Web Application',
+    description: 'Developed an online store with product management and ordering features.',
+    image: 'images/iot-matrix.jpg',
+    tech: ['Node.js', 'Angular']
+}
         ];
 
         // Skills data
