@@ -478,6 +478,6 @@ https://templatemo.com/tm-600-prism-flux
             const scrolled = window.pageYOffset;
             const parallax = document.querySelector('.hero');
             if (parallax) {
-                parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
+                parallax.style.transform = `translateY(${scrolled * 0.3}px)`;
             }
         });
