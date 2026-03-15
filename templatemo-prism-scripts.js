@@ -16,50 +16,99 @@ https://templatemo.com/tm-600-prism-flux
     id: 1,
     title: 'RAG-based Chatbot',
     description: 'Developed an intelligent chatbot using RAG to answer post-baccalaureate student questions using Ministry of Higher Education data.',
+    detailedDescription : `<ul>
+                            <li>Design and develop an intelligent chatbot based on the Retrieval-Augmented Generation (RAG) approach to answer post-baccalaureate student questions using data from the Ministry.</li>
+                            <li>Implement a document indexing and retrieval system to generate contextual and relevant responses.</li>
+                            <li>Integrate Large Language Models (LLMs) and vector databases to improve the relevance and accuracy of responses.</li>
+                            </ul>`,
     image: 'images/neural-network.jpg',
-    tech: ['LLaMA', 'Python', 'Vector Databases']
+    tech: ['LLaMA', 'Python', 'Vector Databases'],
+    github : "confidential"
 },
 {
     id: 2,
     title: 'ANN Benchmark',
     description: 'Implemented and benchmarked multiple ANN search methods and vector quantization techniques for efficient similarity search.',
+    detailedDescription : `<ul>
+                            <li>Study and compare several Approximate Nearest Neighbors (ANN) similarity search methods (HNSW, FAISS, ScaNN).</li>
+                            <li>Analyze algorithm performance in terms of search time, accuracy, and memory consumption.</li>
+                            <li>Implement and experiment with different vector quantization techniques for vector indexing (IVF, IVFPQ, RABBITQ, LVQ).</li>
+                            <li>Conduct large-scale experimental evaluations on vector datasets (up to 1M vectors with 768 dimensions).</li>
+                            </ul>`,
     image: 'images/quantum-cloud.jpg',
-    tech: ['C++', 'Python', 'Docker']
+    tech: ['C++', 'Python', 'Docker'],
+    github : "https://github.com/Mohamed-ktari/ENSEA_Project2025"
 },
 {
     id: 3,
     title: 'Prime Platform',
     description: 'Built a web platform to manage universities and research publications with automated bonus calculation and administrative document generation.',
+    detailedDescription : `<ul>
+                            <li>Design and develop an application for managing universities, researcher profiles, and their scientific productions (patents, articles, books).</li>
+                            <li>Model the system using UML diagrams to structure the architecture of the application.</li>
+                            <li>Architect a service-oriented application (SOA) separating the backend (Spring Boot REST API) from the frontend (Next.js).</li>
+                            <li>Develop an automated bonus calculation system based on researchers’ scientific publications.</li>
+                            <li>Automate the generation of administrative documents (Word, Excel) and their distribution to the relevant stakeholders.</li>
+                            </ul>`,
     image: 'images/blockchain-vault.jpg',
-    tech: ['SpringBoot', 'Next.js', 'PostgreSQL']
+    tech: ['SpringBoot', 'Next.js', 'PostgreSQL'],
+    github : "confidential"
 },
+
 {
     id: 4,
     title: 'Enterprise Resource Planning System',
     description: 'Developed an ERP system for managing HR, projects, invoicing, and customer relationships.',
+    detailedDescription : `<ul>
+                            <li>Design and develop an ERP system for managing human resources, projects, invoicing, and customer relationships (CRM).</li>
+                            <li>Model the system architecture using UML diagrams (use cases, class diagrams, and sequence diagrams).</li>
+                            <li>Contribute to the implementation of core management functionalities and integration of different system components.</li>
+                            </ul>`,
     image: 'images/cyber-defense.jpg',
-    tech: ['.NET', 'Angular', 'SQL Server']
+    tech: ['.NET', 'Angular', 'SQL Server'],
+    github : "https://github.com/Mohamed-ktari/stage-1-ERP"
 },
 {
     id: 5,
     title: '4C ENSIT Web Application',
     description: 'Developed a web platform to manage activities and services for the 4C ENSIT center.',
+    detailedDescription : `<ul>
+                            <li>Design and develop a web application to manage academic and extracurricular activities within the school.</li>
+                            <li>Implement features for managing upcoming school events, club activities, and member information.</li>
+                            <li>Develop full CRUD functionalities (Create, Read, Update, Delete) for events, clubs, and members.</li>
+                            <li>Build an intuitive interface to facilitate event organization and information management.</li>
+                            </ul>`,
     image: 'images/data-nexus.jpg',
-    tech: ['.NET', 'JavaScript', 'SQL Server']
+    tech: ['.NET', 'JavaScript', 'SQL Server'],
+    github : "confidential"
 },
 {
     id: 6,
     title: 'Pharmacy Management System',
     description: 'Built a desktop application for managing medications, inventory, and customer sales.',
+    detailedDescription : `<ul>
+                            <li>Design and develop a desktop application for managing pharmacy operations.</li>
+                            <li>Implement stock management for medications with full CRUD functionalities.</li>
+                            <li>Develop a sales management module to handle customer purchases.</li>
+                            <li>Ensure efficient tracking of medication inventory and transaction records.</li>
+                            </ul>`,
     image: 'images/ar-interface.jpg',
-    tech: ['JavaFX', 'Java', 'MySQL']
+    tech: ['JavaFX', 'Java', 'MySQL'],
+    github : ""
 },
 {
     id: 7,
     title: 'E-commerce Web Application',
     description: 'Developed an online store with product management and ordering features.',
+    detailedDescription : `<ul>
+                            <li>Design and develop an e-commerce web application for online product sales.</li>
+                            <li>Implement product inventory management with full CRUD functionalities.</li>
+                            <li>Develop modules for shopping cart management, user accounts, and order processing.</li>
+                            <li>Handle stock updates and sales transactions through an integrated management system.</li>
+                            </ul>`,
     image: 'images/iot-matrix.jpg',
-    tech: ['Node.js', 'Angular']
+    tech: ['Node.js', 'Angular'],
+    github : "https://github.com/Mohamed-ktari/E_commerce-Angular"
 }
         ];
 
@@ -161,7 +210,7 @@ https://templatemo.com/tm-600-prism-flux
                     <h3 class="card-title">${data.title}</h3>
                     <p class="card-description">${data.description}</p>
                     <div class="card-tech">${techBadges}</div>
-                    <button class="card-cta" onclick="scrollToSection('about')">Explore</button>
+                    <button class="card-cta" onclick="openModal(${index})">Explore</button>
                 </div>
             `;
             
@@ -185,6 +234,8 @@ https://templatemo.com/tm-600-prism-flux
             
             updateCarousel();
         }
+
+
 
         function updateCarousel() {
             const items = document.querySelectorAll('.carousel-item');
@@ -269,6 +320,53 @@ https://templatemo.com/tm-600-prism-flux
             indicators.forEach((indicator, index) => {
                 indicator.classList.toggle('active', index === currentIndex);
             });
+        }
+
+        // Project modal 
+        const modal = document.getElementById("projectModal");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalDescription = document.getElementById("modalDescription");
+        // const modalImage = document.getElementById("modalImage");
+        const modalTech = document.getElementById("modalTech");
+        const modalClose = document.getElementById("modalClose");
+        modalClose.onclick = () => {
+            modal.style.display = "none";
+        };
+
+        window.onclick = (e) => {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+        const modalGithub = document.getElementById("modalGithub");
+
+        function openModal(index) {
+
+            const project = portfolioData[index];
+
+            modalTitle.textContent = project.title;
+            modalDescription.innerHTML = project.detailedDescription;
+            // modalImage.src = project.image;
+
+            modalTech.innerHTML = project.tech
+                .map(t => `<span class="tech-badge">${t}</span>`)
+                .join('');
+
+            if (project.github === "confidential") {
+
+            modalGithub.textContent = "Confidential Project";
+            modalGithub.removeAttribute("href");
+            modalGithub.classList.add("disabled");
+
+            } else {
+
+                modalGithub.textContent = "View on GitHub";
+                modalGithub.href = project.github;
+                modalGithub.classList.remove("disabled");
+
+            }
+
+            modal.style.display = "flex";
         }
 
         function nextSlide() {
